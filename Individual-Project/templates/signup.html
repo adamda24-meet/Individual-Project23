@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<form method="post" action="/signup">
+        <!-- Heading -->
+        <h4>
+            Create an account
+        </h4>
+
+        <!-- Subheading -->
+        <p >
+
+            Please fill up your information below to sign up.
+    
+
+        </p>
+
+        <!-- Email -->
+        <div>
+            <label>Email address*</label>
+            <div>
+                <input type="email"  name="email" id="btn" required>
+            </div>
+        </div>
+
+        <!-- Password -->
+        <div>
+            <label>Password*</label>
+            <div class="input-group">
+                <input type="password"  name="password" id="btn" minlength="6">
+            </div>
+        </div>
+
+
+         <div>
+            <label> full name*</label>
+            <div class="input-group">
+                <input type="text"  name="full_name" id="btn" required>
+            </div>
+        </div>
+
+
+         <div>
+            <
+            <label> Username*</label>
+            <div class="input-group">
+                <input type="text"  name="username" id="btn" required>
+            </div>
+        </div>
+
+         <div>
+            <label> bio*</label>
+            <div class="input-group">
+                <input type="text"  name="bio" id="btn" maxlength="280" required>
+            </div>
+        </div>
+        <!-- Button -->
+        <div>
+            <input type="submit" id="btn"/>
+        </div>
+    </form>
+    <br>
+    <a href="/"><button id="btn">signin</button></a>
+</body>
+</html>
