@@ -7,12 +7,20 @@
 	<title></title>
 </head>
 <body>
+<h2><center>THE HELP QUEUE</center></h2>
 {%if students%}
 {%for student in students%}
+<center>
 <h2>{{students[student]['name']}}</h2>
-<a href="/delete/{{student}}">click here if u helped</a>
+<a href="/delete/{{student}}"><button id="btn">click here if u helped</button></a>
+</center>
 {%endfor%}
 {%endif%}
-<a href="/home"><button id="btn">go back home !</button></a>
+<div>
+	<a href="/home"><button id="btn" ><h2>go back home !</h2></button></a>
+</div>
+<div>
+	<a href="/signout"><button id="btn"><h2>signout!</h2></button></a>
+</div>
 </body>
 </html>

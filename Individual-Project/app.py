@@ -80,6 +80,7 @@ def display_users():
 def delete(uid):
     try:
         # print('db:', db.child("Students").child(UID).get().val())
+        print(uid)
         db.child("Students").child(uid).remove()
         return redirect(url_for('display_users'))
     except:
@@ -91,7 +92,7 @@ def delete(uid):
 def signout():
     login_session['user'] = None
     auth.current_user = None
-    return redirect(url_for('index.html'))
+    return redirect(url_for('signin'))
 
 
 @app.route('/all_tweets')
